@@ -17,7 +17,7 @@
 
 body{
 	text-align: center;
-	background-image: url("forest-path.jpeg");
+	background-image: url("../public/img/forest-path.jpeg");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-image: fixed;
@@ -37,7 +37,26 @@ p {
 	text-shadow: 2px 2px 2px #303030;
 }
 
+.outerdiv{
+	position: absolute;
+	top: 5%;
+	width: 100%;
+	height: 90%;
+	z-index: 1;
+	background-color: #663333;
+	opacity: 0.3;
+}
 
+.innerdiv{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	overflow: auto;
+}
 
 a {
 	text-decoration: none;
@@ -89,15 +108,15 @@ p#home {
 /*About page*/
 
 #me:hover{
-	content: url("../public/meColor.png");
+	content: url("../public/img/meColor.png");
 	height:300px;
 }
 
 .hobbies {
 	display: inline-block;
 	position: absolute;
-	top: 0;
-	left:0;
+	top: 22px;
+	right: 0;
 	width: 90%;
 	height:30px;
 	padding: 5px;
@@ -113,8 +132,9 @@ p#home {
 }
 
 .hobbies sup{
-	font-size: 30px;
-	font-family: "Carolus Italic";
+	font-size: 15px;
+	font-family: "Helvetica";
+	text-shadow: 2px 2px 2px #303030;
 }
 
 .aboutWrap{
@@ -153,35 +173,26 @@ p#home {
 	font-size: 35px;		
 	color: white;
 	text-shadow: 2px 2px 2px #303030;
-	text-align: left;
 }
 
 #column3{
-	float:right;
-	margin: 10px;
-	border: 2px solid grey;
-	width: 30%;
-	padding:10px;
+	display: inline-block;
+	position: absolute;
+	top: 20%;
+	left:65%;
+	width:30%;
+	padding: 5px;
+	color: white;
+	font-size: 14px;
+	font-family: "TrajanusBricks";
+	text-shadow: 2px 2px 2px #303030;
+	text-align: right;
 }
 
-#column3img{
-	width: 30px;
+#skills{
+	font-size: 30px;
+	font-family: "Helvetica";
 }
-
-#column3img img{
-	float:left;
-	padding: 12px;
-}
-#column3text{
-	vertical-align: top;
-}
-
-#column3text p{
-	
-	text-align: left;
-}
-
-
 
 /*Contact page*/
 
@@ -218,13 +229,15 @@ p#home {
 }
 
 #box p{
-	text-align: left;
-	font-size: 15px;
+	text-align: center;
+	font-family: "Helvetica";
+	font-size: 20px;
 	vertical-align: bottom;
 }
 
-#worktitles p{
-	font-size: 20px;
+#box p#title{
+	font-family: "TrajanusBricks";
+	font-size: 22px;
 	text-align: center;
 }
 
