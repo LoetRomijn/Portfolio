@@ -25,6 +25,10 @@ body{
 	padding: 0;
 }
 
+.growAbout { transition: all .5s ease-in-out; }
+.growAbout:hover { transform: scale(2.0); }
+
+
 p {
 	text-align: center;
 	font-family: 'TrajanusBricks';
@@ -47,6 +51,7 @@ a {
 
 a#home{
 	font-size: 25px;
+	text-decoration: none;
 }
 
 p#home {
@@ -72,24 +77,61 @@ p#home {
 	text-align: center;
 }
 
+.bodyTextdiv a{
+	text-decoration: none;
+}
+
+.bodyTextdiv a:hover{
+	text-decoration: none;
+	color:#990000;
+}
+
 /*About page*/
+
+#me:hover{
+	content: url("../public/meColor.png");
+	height:300px;
+}
+
+.hobbies {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 90%;
+	height:30px;
+	padding: 5px;
+	color: white;
+	text-align: right;
+}
+
+.hobbies img {
+	height:30px;
+	width:30px;
+	margin: 5px;
+	padding: 5px;
+}
+
+.hobbies sup{
+	font-size: 30px;
+	font-family: "Carolus Italic";
+}
 
 .aboutWrap{
 	position: absolute;
 	width: 100%;
-	top: 10px;
+	top: 30px;
 	margin: auto;
+	margin-top: 15px;
 	padding: 0;
 	text-align: left;
 }
 
 #column1{
-	display: inline-block;
+	float:left;
 	width:25%;
 	text-align: right;
-	margin: 10px;
-	padding: 5px;
-	vertical-align: bottom;
+	padding: 10px;
 }
 
 #column1 pre{
@@ -103,9 +145,7 @@ p#home {
 #column2{
 	display: inline-block;
 	width:30%;
-	margin: 10px;
-	padding: 5px;
-	vertical-align: bottom;
+	padding: 10px;
 }
 
 #column2 p{
@@ -116,13 +156,12 @@ p#home {
 	text-align: left;
 }
 
-/*#column3{
-	display: inline-block;
-	position: relative;
-	left: 20%;
+#column3{
+	float:right;
+	margin: 10px;
+	border: 2px solid grey;
 	width: 30%;
-	margin: 10px;	
-	vertical-align: bottom;
+	padding:10px;
 }
 
 #column3img{
@@ -130,13 +169,17 @@ p#home {
 }
 
 #column3img img{
+	float:left;
 	padding: 12px;
-}*/
+}
+#column3text{
+	vertical-align: top;
+}
 
-/*#column3text p{
-	text-align: right;
-
-}*/
+#column3text p{
+	
+	text-align: left;
+}
 
 
 
@@ -178,6 +221,11 @@ p#home {
 	text-align: left;
 	font-size: 15px;
 	vertical-align: bottom;
+}
+
+#worktitles p{
+	font-size: 20px;
+	text-align: center;
 }
 
 .grow { transition: all .5s ease-in-out; }
