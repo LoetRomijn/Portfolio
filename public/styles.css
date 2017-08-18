@@ -133,7 +133,7 @@ p#home {
 /*About page*/
 
 #me {
-  content: url("../public/img/meColor.png");
+  content: url("./public/img/meColor.png");
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
